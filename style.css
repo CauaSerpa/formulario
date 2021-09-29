@@ -10,12 +10,12 @@ html{
 }
 
 @font-face{
-	src:url('../font/PTSans-Regular.ttf');
+	src:url('PTSans-Regular.ttf');
 	font-family: "PTSans-Regular";
 }
 
 body{
-	background-image: url("../image/Cidade.jpg");
+	background-image: url("Cidade.jpg");
 	width: 100%;
 	background-position: center;
 	background-repeat: no repeat;
