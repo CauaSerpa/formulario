@@ -227,7 +227,7 @@ section
     position: absolute;
     right: 0;
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 3rem);
     display: flex;
     justify-content: flex-start;
     align-items: center;
