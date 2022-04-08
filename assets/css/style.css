@@ -1,0 +1,282 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Variables CSS */
+:root
+{
+    --header-height: 3rem;
+	--font-semi: 600;
+}
+/* Colors */
+:root
+{
+    --white: #fff;
+    --black: #181818;
+    --blue: #647bff;
+    --second-blue: #171b3c;
+    --third-blue: #0e0f26;
+    --gray: #222231;
+    --second-gray: #2b303f;
+    --green: #19CE1D;
+}
+/* Fonte */
+:root
+{
+	--body-font: 'Poppins', sans-serif;
+    --title-font-size: 3rem;
+	--big-font-size: 3rem;
+	--h2-font-size: 2.5rem;
+    --average-font-size: 1.5rem;
+    --p-font-size: 1.5rem;
+	--normal-font-size: 1rem;
+    --little-font-size: .938rem
+}
+@media screen and (min-width: 768px)
+{
+	:root
+	{
+        --title-font-size: 7rem;
+		--big-font-size: 4rem;
+		--h2-font-size: 2.5rem;
+        --average-font-size: 2rem;
+        --p-font-size: 1.25rem;
+		--normal-font-size: 1.25rem;
+        --little-font-size: 1rem;
+	}
+}
+/* Margens */
+:root
+{
+	--mb-1: 0.5rem;
+	--mb-2: 1rem;
+	--mb-3: 1.5rem;
+	--mb-4: 2rem;
+	--mb-5: 2.5rem;
+	--mb-6: 3rem;
+}
+/* z index */
+:root{
+	--z-back: -10;
+	--z-normal: 1;
+	--z-tooltip: 10;
+	--z-fixed: 100;
+}
+/* Bootstrap */
+.center
+{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+.w50,
+.inform__w50
+{
+    width: 50%;
+}
+.left
+{
+    float: left;
+}
+.right
+{
+    float: right;
+}
+.clear
+{
+    clear: both;
+}
+@media screen and (max-width: 768px) 
+{
+    .w50
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1335px)
+{
+    .inform__w50
+    {
+        width: 100%;
+    }
+}
+/* Base */
+*::before::after
+{
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    margin: var(--header-heigth) 0 0 0;
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
+	color: var(--white);
+    background: var(--black);
+}
+h1, h2, p
+{
+    margin: 0;
+}
+ul
+{
+    margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a
+{
+    text-decoration: none;
+    color: var(--white);
+}
+img
+{
+    max-width: 100%;
+	height: auto;
+	display: block;
+}
+/* header */
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .nav
+{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .nav .logo a
+{
+    display: flex;
+    align-items: center;
+    color: var(--green);
+    font-weight: bold;
+}
+header .nav .logo a img
+{
+    max-height: 20px;
+    margin-right: .5rem;
+}
+header .nav .nav__menu .nav__list
+{
+    display: flex;
+}
+header .nav .nav__menu .nav__list .nav__item a
+{
+    color: var(--green);
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+section.bg
+{
+    position: fixed;
+    left: 0;
+    width: 100%;
+    margin-top: 27%;
+    background: #3D3D3D;
+    border-radius: 2rem 2rem 0 0;
+}
+section.box__container
+{
+    position: relative;
+    left: 0;
+    width: 100%;
+    margin-top: 27%;
+    background: #3D3D3D;
+    border-radius: 2rem 2rem 0 0;
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .container__reply
+{
+    position: relative;
+    width: 85%;
+    height: 3rem;
+    background: #5A5A5A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    border-radius: 5rem;
+}
+.container .container__reply a
+{
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #181818;
+    width: 20%;
+    height: 100%;
+    border-radius: 5rem;
+}
+.container .container__reply a i
+{
+    font-size: 1.5rem;
+    color: #19CE1D;
+}
+.container .container__reply p
+{
+    color: #19CE1D;
+}
+.container .container__reply p i
+{
+    margin-right: 1rem;
+}
+.container .container__latter-questions
+{
+    width: 85%;
+    margin-top: 2rem;
+}
+.container .container__latter-questions p.title
+{
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+.container .container__latter-questions .container__question
+{
+    width: 100%;
+    border-radius: 1rem;
+    background: #5A5A5A;
+    margin-bottom: 1rem;
+}
+.container .container__latter-questions .container__question .question
+{
+    padding: 1rem;
+}
+.container .container__latter-questions .container__question .question label
+{
+    font-size: .8rem;
+    display: flex;
+    margin-top: .5rem;
+}
+.container .container__latter-questions .container__question .question a
+{
+    position: relative;
+    width: 100%;
+    height: 2rem;
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #19CE1D;
+    border-radius: 3rem;
+    color: #19CE1D;
+    font-size: .8rem;
+}
