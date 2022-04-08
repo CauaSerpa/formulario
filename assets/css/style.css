@@ -205,7 +205,7 @@ section.box__container
 .container .container__reply
 {
     position: relative;
-    width: 85%;
+    width: 90%;
     height: 3rem;
     background: #5A5A5A;
     display: flex;
@@ -214,9 +214,10 @@ section.box__container
     margin-top: 2rem;
     border-radius: 5rem;
 }
-.container .container__reply a
+.container .container__reply .reply
 {
     position: absolute;
+    top: 0;
     left: 0;
     display: flex;
     align-items: center;
@@ -226,7 +227,7 @@ section.box__container
     height: 100%;
     border-radius: 5rem;
 }
-.container .container__reply a i
+.container .container__reply .reply i
 {
     font-size: 1.5rem;
     color: #19CE1D;
@@ -241,7 +242,7 @@ section.box__container
 }
 .container .container__latter-questions
 {
-    width: 85%;
+    width: 90%;
     margin-top: 2rem;
 }
 .container .container__latter-questions p.title
