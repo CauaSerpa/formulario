@@ -255,11 +255,16 @@ section.box__container
     width: 100%;
     border-radius: 1rem;
     background: #5A5A5A;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 .container .container__latter-questions .container__question .question
 {
     padding: 1rem;
+}
+.container .container__latter-questions .container__question .question .question__title
+{
+    color: #19CE1D;
+    font-weight: 500;
 }
 .container .container__latter-questions .container__question .question label
 {
@@ -280,4 +285,9 @@ section.box__container
     border-radius: 3rem;
     color: #19CE1D;
     font-size: .8rem;
+}
+.container .container__latter-questions .container__question .question a:hover
+{
+    color: #5A5A5A;
+    background: #19CE1D;
 }
